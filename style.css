@@ -2,7 +2,6 @@
 *, *::before, *::after {box-sizing: inherit}
 
 html {
-
 font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
 box-sizing: border-box;
@@ -23,7 +22,6 @@ header {
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
 }
 
 .headericons-container {
@@ -47,7 +45,7 @@ header {
   margin: 0px 5px;
 }
 
-.portfolio-image {
+#portfolio-image {
   width: 162px;
   height: 162px;
   border-radius: 50%;
@@ -55,7 +53,6 @@ header {
   position: absolute;
   top: 375px;
   right: 10%; 
-  z-index: 1;
 }
 /* TITLETEXTS*/
 .name {
@@ -107,11 +104,6 @@ header {
   /* background-color:#170303; */
 }
 
-/* .header-container-left {
-  background-color:#170303;
-} */
-
-
 main {
   /* display: flex;
   justify-content: center; */
@@ -120,7 +112,7 @@ main {
 .mypitch-background {
   background-color: #F4F4F4;
   height: 342px;
-  margin: -30px 0px;
+  /* margin: 5px 0px; */
   z-index: -1;
 }
 
@@ -129,7 +121,7 @@ main {
   font-weight: normal;
   font-size: 17px;
   color: #000000;
-  margin: 58px 37px;
+  /* margin: 58px 37px; */
   padding: 58px 37px;
   text-align: left;
   line-height: 29px;
@@ -158,10 +150,10 @@ main {
   height: 33px;
   background-color: #FA382F;
   padding: 3px 10px;
-  /* align-self: center; */
   line-height: 27px;
   margin: 58px auto;
   text-align:center;
+  
 }
 .programmingskills {
   font:'Montserrat', sans-serif;
