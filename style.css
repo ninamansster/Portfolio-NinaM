@@ -5,75 +5,252 @@ html {
 
 font-family: 'Roboto', sans-serif;
 font-family: 'Montserrat', sans-serif;
+box-sizing: border-box;
 }
 
 body {
   margin: 0px;
-  /* width: 375px; */
   height: 5141px;
   background: #FFFFFF 0% 0% no-repeat padding-box;
   opacity: 1;
-  box-sizing: border-box;
-
 }
 
 header {
   background-image: url(assets/shutterstock_1064827904.jpg);
-  /* width: 375px; */
   height: 508px;
-  /* background: #170303 0% 0% no-repeat padding-box; */
   border: 1px solid #707070;
-  /* opacity: 0.26; */
   background-size: cover;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
+  z-index: -1;
 }
 
-.headericons {
+.headericons-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
-  /* margin-left: 210px; */
+  margin: 10px;
+  position: relative;
+  top: 20%;
+  right: 10%;
 }
 
-.headericonsborder {
-  margin-top: 105px;
+.headericons-border {
   padding: 5px 5px 5px 6px;
   width: 39px;
   height: 39px;
   border: 3px solid #FFFFFF;
   opacity: 1;
-  border-radius: 19px;
-  
+  border-radius: 50%;
+  margin: 0px 5px;
 }
 
-.portfolioimage {
-  margin-top: 254px;
-  margin-left: 276px;
+.portfolio-image {
   width: 162px;
   height: 162px;
-  background: transparent url('Assets/Nina.png') 0% 0% no-repeat padding-box;
+  border-radius: 50%;
   border: 3px solid #FFFFFF;
-  border-radius: 81px;
-  opacity: 1;
-  background-size: cover;
-  display: block;
-
-  
+  position: absolute;
+  top: 375px;
+  right: 10%; 
+  z-index: 1;
+}
+/* TITLETEXTS*/
+.name {
+  font: 'Roboto, sans-serif';
+  font-weight: normal;
+  font-size: 13px;
+  color:#FFFFFF;
+  top: 176px;
+  left: 41px;
+  position: absolute;
 }
 
-
+.fullname {
+  font: 'Roboto, sans-serif';
+  font-weight: bold;
+  font-size: 13px;
+  color:#FFFFFF;
+  top: 176px;
+  left: 140px;
+  position: absolute;
+}
 .title {
   font:'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 40px;
   color: #FFFFFF;
-  margin-top: 196px;
-  margin-left: 41px;
+  top: 196px;
+  left: 41px;
   position: absolute;
   text-align: left;
+}
+
+.subtitle {
+  font:'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #FFFFFF;
+  top: 296px;
+  left: 41px;
+  position: absolute;
+  text-align: left;
+}
+
+.header-box-tech {
+  font:'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #FFFFFF;
+  width: 85px;
+  height: 33px;
+  background-color: #FA382F;
+  padding: 3px 10px;
+  align-self: center;
+  line-height: 27px;
+  margin: 58px 0px;
+}
+
+/* PITCH*/
+.mypitch-background {
+  background-color: #F4F4F4;
+  height: 342px;
+  margin: -30px 0px;
+  z-index: -1;
+}
+
+.mypitch {
+  font:'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  color: #000000;
+  margin: 58px 37px;
+  padding: 58px 37px;
+  text-align: left;
+  line-height: 29px;
+}
+
+/*SECOND HEADER*/
+
+.header-other {
+  font:'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  color: #FA382F;
+  line-height: 25px;
+  letter-spacing: 0;
+  margin: 58px 0px;
+}
+
+/* PROGRAMMING*/
+.programmingskills {
+  font:'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  color: #000000;
+  margin: 58px 37px;
+  text-align: center;
+  line-height: 29px;
+}
+/* FEATURED*/
+.header-box-featured {
+  font:'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #FFFFFF;
+  width: 300px;
+  height: 33px;
+  background-color: #FA382F;
+  padding: 3px 10px;
+  line-height: 27px;
+  letter-spacing: 0;
+  margin: 58px 0px;
+
+}
+
+.description-header {
+  font: 'Roboto, sans-serif';
+  font-weight: bold;
+  font-size: 17px;
+  color:#FA382F;
+  margin: 0px 37px;
+  text-align: left;
+  line-height: 25px;
+}
+
+.description {
+  font: 'Roboto, sans-serif';
+  font-weight: normal;
+  font-size: 17px;
+  color: #000000;
+  margin: 0px 37px;
+  text-align: left;
+  line-height: 25px;
+}
+
+/* THOUGHTS*/
+.header-box-thoughts {
+  font:'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #FFFFFF;
+  width: 200px;
+  height: 33px;
+  background-color: #FA382F;
+  padding: 3px 10px;
+  line-height: 27px;
+  letter-spacing: 0;
+  margin: 58px 0px;
+
+}
+
+.date {
+  font: 'Roboto, sans-serif';
+  font-weight: Regular;
+  font-size: 17px;
+  color:#FA382F;
+  text-align: left;
+  line-height: 32px;
+}
+
+/* SKILLS*/
+
+.header-box-skills {
+  font:'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #FFFFFF;
+  width: 200px;
+  height: 33px;
+  background-color: #FA382F;
+  padding: 3px 10px;
+  line-height: 27px;
+  letter-spacing: 0;
+  margin: 58px 0px;
+}
+
+.skillset-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 800px;
+
+}
+
+.skillset {
+  font:'Montserrat', sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  color: #000000;
+  margin: 58px 37px;
+  text-align: center;
+  line-height: 29px;
+  display: block; 
+  width: 150px;
+  padding: 0px 10px;
+  margin: 41px 10px;
 }
 
 .h2monserrat {
@@ -89,33 +266,6 @@ header {
   font-size: 37px;
   color: #FFFFFF;
 }
-
-.subtitle {
-  font:'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 24px;
-  color: #FFFFFF;
-  margin-top: 296px;
-  margin-left: 41px;
-  position: absolute;
-  text-align: left;
-}
-
-.h5monserrat {
-  font-family:'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 22px;
-  color: #FFFFFF;
-}
-
-.mypitch {
-  font:'Montserrat', sans-serif;
-  font-weight: normal;
-  font-size: 17px;
-  color: #000000;
-  margin-left: 37px;
-}
-
 .h7monserrat {
   font-family:'Montserrat', sans-serif;
   font-weight: bold;
@@ -123,12 +273,7 @@ header {
   color: #FDDFE7;
 }
 
-.h8monserrat {
-  font-family:'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 21px;
-  color: #FA382F;
-}
+
 
 .h9monserrat {
   font-family:'Montserrat', sans-serif;
@@ -137,39 +282,6 @@ header {
   color:#FFFFFF;
 }
 
-.name {
-  font: 'Roboto, sans-serif';
-  font-weight: normal;
-  font-size: 13px;
-  color:#FFFFFF;
-  margin-top: 176px;
-  margin-left: 41px;
-  position: absolute;
-}
-
-.fullname {
-  font: 'Roboto, sans-serif';
-  font-weight: bold;
-  font-size: 13px;
-  color:#FFFFFF;
-  margin-top: 176px;
-  margin-left: 140px;
-  position: absolute;
-}
-
-.h3roboto {
-  font-family: 'Roboto, sans-serif';
-  font-weight: normal;
-  font-size: 17px;
-  color:#FA382F;
-}
-
-.h4roboto {
-  font-family: 'Roboto, sans-serif';
-  font-weight: normal;
-  font-size: 17px;
-  columns: #000000;
-}
 
 .h5roboto {
   font-family: 'Roboto, sans-serif';
@@ -185,7 +297,7 @@ header {
   columns: #000000;
 }
 
-.h7roboto {
+.kkproject-description {
   font-family: 'Roboto, sans-serif';
   font-weight: bold;
   font-size: 17px;
@@ -199,9 +311,4 @@ header {
   columns: #ffffff;
 }
 
-.h9roboto {
-  font-family: 'Roboto, sans-serif';
-  font-weight: Regular;
-  font-size: 17px;
-  columns: #ffffff;
-}
+
