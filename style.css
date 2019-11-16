@@ -63,7 +63,7 @@ header {
   padding: 5px 5px 5px 6px;
   width: 39px;
   height: 39px;
-  border: 3px solid #FFFFFF;
+  border: 2px solid #FFFFFF;
   opacity: 1;
   border-radius: 50%;
   margin: 0px 5px;
@@ -133,10 +133,6 @@ header {
   /* background-color:#170303; */
 }
 
-main {
-  /* display: flex;
-  justify-content: center; */
-}
 /* PITCH*/
 .mypitch-background {
   background-color: #F4F4F4;
@@ -207,10 +203,17 @@ main {
   letter-spacing: 0;
   margin: 58px auto;
   text-align:center;
-
 }
 
-.description-header p {
+#project-image{
+  width: 303px;
+  height: 179px;
+  background: #000000 0% 0% no-repeat padding-box;
+  /* opacity: 0.38; */
+  margin: 0px 36px;
+}
+
+.description-header h5 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 17px;
@@ -230,7 +233,30 @@ main {
   line-height: 25px;
 }
 
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 37px;
+}
+
+.tags h6 {
+  font-family:'Roboto, sans-serif';
+  width: fit-content;
+  height: 17px;
+  background: #FDDFE7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  font-weight: normal;
+  font-size: 9px;
+  color: #2B2E34;
+  text-align: center;
+  padding: 2px;
+  margin: 2px;
+}
+
 /* THOUGHTS*/
+.content-container:nth-child(4) {
+  padding: 58px 0;
+}
 .header-box-thoughts h2 {
   /* font:'Montserrat', sans-serif; */
   font-weight: bold;
@@ -244,7 +270,6 @@ main {
   letter-spacing: 0;
   margin: 58px auto;
   text-align:center;
-
 }
 
 .date p {
@@ -254,6 +279,7 @@ main {
   color:#FA382F;
   text-align: left;
   line-height: 32px;
+  margin: 0px 37px;
 }
 
 /* SKILLS*/
@@ -261,10 +287,11 @@ main {
 .content-container:nth-child(5) {
   background-color: #F4F4F4;
   padding: 58px 0;
+  display: block;
+  text-align:center;
 }
 
 .header-box-skills h2 {
-  /* font:'Montserrat', sans-serif; */
   font-weight: bold;
   font-size: 22px;
   color: #FFFFFF;
@@ -275,13 +302,16 @@ main {
   line-height: 27px;
   letter-spacing: 0;
   margin: 58px auto;
-  text-align:center;
 }
 
 .skillset-container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: inline-grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin: 0 auto;
+  text-align: center;
+   
 }
 
 .skillset {
@@ -290,9 +320,6 @@ main {
   text-align: center;
   line-height: 29px;
   display: block; 
-  width: 200px;
-  padding: 0px 10px;
-  margin: 5px 0px;
 }
 
 .skillset h4 {
@@ -312,6 +339,11 @@ ul {
 
 
 /* MORE*/
+.content-container:nth-child(6) {
+  padding: 58px 0;
+  display: block;
+  text-align:center;
+}
 .icons{
   display: flex;
   flex-direction: row;
@@ -322,29 +354,28 @@ ul {
 .iconsborder-more {
   padding: 5px 5px 5px 6px;
   margin: 0px 5px;
-  width: 39px;
-  height: 39px;
-  border: 3px solid #FA382F;
-  opacity: 1;
-  border-radius: 50%;
-}
-.iconsborder-more a p {
-  justify-content: space-around;
+  display:flex;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-/* .iconsborder-more {
-  justify-content: space-around;
-  align-items: center;
-} */
+a {
+  text-decoration-color: #FA382F;
+  flex-direction: column;
+  justify-content: center;
+}
 
-.more-description a p {
+a:focus {
+  outline: solid 2px black;
+  text-decoration: none;
+}
+
+
+#more-description {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 17px;
   color:#FA382F;
-  margin: 10px 10px;
-  padding:10px 5px;
   text-align: center;
   line-height: 25px;
   display: block;
@@ -412,21 +443,41 @@ footer {
   color: #FDDFE7;
 }
 
-
-
-.h5roboto {
-  font-family: 'Roboto, sans-serif';
-  font-weight: normal;
-  font-size: 9px;
-  columns: #2B2E34;
-}
-
 .h6roboto {
   font-family: 'Roboto, sans-serif';
   font-weight: bold;
   font-size: 21px;
   columns: #000000;
 }
+
+/* MEDIAQUERIES */
+@media (min-width: 650px) {
+
+.skillset-container {
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+}
+
+@media (min-width: 1024px) {
+
+  .skillset-container {
+    
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin: 0 auto;
+    text-align: center;
+     
+  }
+  
+  }
 
 
 
