@@ -1,27 +1,50 @@
 /* BOX SIZING ska gälla för alla boxar utom de som har UNSET */
 *, *::before, *::after {box-sizing: inherit}
 
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
 html {
-font-family: 'Roboto', sans-serif;
-font-family: 'Montserrat', sans-serif;
+
 box-sizing: border-box;
 }
 
 body {
   margin: 0px;
-  height: 5141px;
+  /* height: 5141px; */
   background: #FFFFFF 0% 0% no-repeat padding-box;
   opacity: 1;
+  font-family: 'Montserrat', sans-serif;
 }
 
 header {
-  background-image: url(assets/shutterstock_1064827904.jpg);
+  background-image: url(assets/leigh-cooper-YGETh6y8MDI-unsplash-portfolio-green.jpeg);
   height: 508px;
   border: 1px solid #707070;
   background-size: cover;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
+  opacity: 0,5;
 }
 
 .headericons-container {
@@ -33,6 +56,7 @@ header {
   position: relative;
   top: 20%;
   right: 10%;
+  
 }
 
 .headericons-border {
@@ -55,8 +79,13 @@ header {
   right: 10%; 
 }
 /* TITLETEXTS*/
+/* .header-container{
+  top: 25%;
+  left: 41px;
+  position: absolute;
+} */
 .name {
-  font: 'Roboto, sans-serif';
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 13px;
   color:#FFFFFF;
@@ -64,11 +93,11 @@ header {
   left: 41px;
   position: absolute;
   display: block;
-  background-color:#170303;
+  /* background-color:#170303; */
 }
 
 .fullname {
-  font: 'Roboto, sans-serif';
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 13px;
   color:#FFFFFF;
@@ -76,10 +105,10 @@ header {
   left: 140px;
   position: absolute;
   display: block;
-  background-color:#170303;
+  /* background-color:#170303; */
 }
-.title {
-  font:'Montserrat', sans-serif;
+.title h1 {
+  /* font:'Montserrat', sans-serif; */
   font-weight: bold;
   font-size: 40px;
   color: #FFFFFF;
@@ -91,8 +120,8 @@ header {
   /* background-color:#170303; */
 }
 
-.subtitle {
-  font:'Montserrat', sans-serif;
+.subtitle h1 {
+  /* font:'Montserrat', sans-serif; */
   font-weight: bold;
   font-size: 24px;
   color: #FFFFFF;
@@ -112,12 +141,12 @@ main {
 .mypitch-background {
   background-color: #F4F4F4;
   height: 342px;
-  /* margin: 5px 0px; */
+  margin: 5px 0px;
   z-index: -1;
 }
 
-.mypitch {
-  font:'Montserrat', sans-serif;
+.mypitch p{
+  /* font:'Montserrat', sans-serif; */
   font-weight: normal;
   font-size: 17px;
   color: #000000;
@@ -129,8 +158,8 @@ main {
 
 /*SECOND HEADER*/
 
-.header-other {
-  font:'Montserrat', sans-serif;
+.header-other h3 {
+  /* font:'Montserrat', sans-serif; */
   font-weight: bold;
   font-size: 21px;
   color: #FA382F;
@@ -141,8 +170,8 @@ main {
 }
 
 /* TECH */
-.header-box-tech {
-  font:'Montserrat', sans-serif;
+.header-box-tech h2 {
+  /* font:'Montserrat', sans-serif; */
   font-weight: bold;
   font-size: 22px;
   color: #FFFFFF;
@@ -155,8 +184,8 @@ main {
   text-align:center;
   
 }
-.programmingskills {
-  font:'Montserrat', sans-serif;
+.programmingskills p {
+  /* font:'Montserrat', sans-serif; */
   font-weight: normal;
   font-size: 17px;
   color: #000000;
@@ -165,8 +194,8 @@ main {
   line-height: 29px;
 }
 /* FEATURED*/
-.header-box-featured {
-  font:'Montserrat', sans-serif;
+.header-box-featured h2{
+  /* font:'Montserrat', sans-serif; */
   font-weight: bold;
   font-size: 22px;
   color: #FFFFFF;
@@ -181,8 +210,8 @@ main {
 
 }
 
-.description-header {
-  font: 'Roboto, sans-serif';
+.description-header p {
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 17px;
   color:#FA382F;
@@ -191,8 +220,8 @@ main {
   line-height: 25px;
 }
 
-.description {
-  font: 'Roboto, sans-serif';
+.description p {
+  font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 17px;
   color: #000000;
@@ -202,8 +231,8 @@ main {
 }
 
 /* THOUGHTS*/
-.header-box-thoughts {
-  font:'Montserrat', sans-serif;
+.header-box-thoughts h2 {
+  /* font:'Montserrat', sans-serif; */
   font-weight: bold;
   font-size: 22px;
   color: #FFFFFF;
@@ -218,7 +247,7 @@ main {
 
 }
 
-.date {
+.date p {
   font: 'Roboto, sans-serif';
   font-weight: Regular;
   font-size: 17px;
@@ -229,8 +258,13 @@ main {
 
 /* SKILLS*/
 
-.header-box-skills {
-  font:'Montserrat', sans-serif;
+.content-container:nth-child(5) {
+  background-color: #F4F4F4;
+  padding: 58px 0;
+}
+
+.header-box-skills h2 {
+  /* font:'Montserrat', sans-serif; */
   font-weight: bold;
   font-size: 22px;
   color: #FFFFFF;
@@ -251,18 +285,32 @@ main {
 }
 
 .skillset {
-  font:'Montserrat', sans-serif;
-  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
   font-size: 17px;
-  color: #000000;
-  margin: 58px 37px;
   text-align: center;
   line-height: 29px;
   display: block; 
   width: 200px;
   padding: 0px 10px;
-  /* margin: 41px 10px; */
+  margin: 5px 0px;
 }
+
+.skillset h4 {
+  color: #FA382F;
+  font-weight: bold;
+}
+
+ul {
+  list-style-type: none;
+  padding-right: 8vw;
+ }
+
+.skillset li {
+  font-weight: normal;
+  color: #000000;
+}
+
+
 /* MORE*/
 .icons{
   display: flex;
@@ -290,8 +338,8 @@ main {
   align-items: center;
 } */
 
-.more-description {
-  font: 'Roboto, sans-serif';
+.more-description a p {
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 17px;
   color:#FA382F;
@@ -322,7 +370,7 @@ footer {
 }
 
 .footer-header {
-  font:'Montserrat', sans-serif;
+  /* font:'Montserrat', sans-serif; */
   font-weight: bold;
   font-size: 21px;
   color:#FFFFFF;
@@ -333,7 +381,7 @@ footer {
 }
 
 .footer-name, .contact, footer a {
-  font: 'Roboto, sans-serif';
+  font-family: 'Roboto', sans-serif;
   font-weight: bold;
   font-size: 17px;
   color: #ffffff;
@@ -380,12 +428,7 @@ footer {
   columns: #000000;
 }
 
-.kkproject-description {
-  font-family: 'Roboto, sans-serif';
-  font-weight: bold;
-  font-size: 17px;
-  columns: #000000;
-}
+
 
 
 
