@@ -38,6 +38,7 @@ body {
 
 header {
   background-image: url(assets/leigh-cooper-YGETh6y8MDI-unsplash-portfolio-green.jpeg);
+  background-color: black;
   height: 508px;
   border: 1px solid #707070;
   background-size: cover;
@@ -93,7 +94,7 @@ header {
   left: 41px;
   position: absolute;
   display: block;
-  /* background-color:#170303; */
+  background-color:#170303;
 }
 
 .fullname {
@@ -105,7 +106,7 @@ header {
   left: 140px;
   position: absolute;
   display: block;
-  /* background-color:#170303; */
+  background-color:#170303;
 }
 .title h1 {
   /* font:'Montserrat', sans-serif; */
@@ -117,7 +118,7 @@ header {
   position: absolute;
   text-align: left;
   display: block;
-  /* background-color:#170303; */
+  background-color:#170303;
 }
 
 .subtitle h1 {
@@ -130,7 +131,7 @@ header {
   position: absolute;
   text-align: left;
   display: block;
-  /* background-color:#170303; */
+  background-color:#170303;
 }
 
 /* PITCH*/
