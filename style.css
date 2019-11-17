@@ -157,7 +157,7 @@ header {
   font-weight: bold;
   /* font-size: 21px; */
   font-size: 1.2rem;
-  color: #FA382F;
+  color: black;
   line-height: 25px;
   letter-spacing: 0;
   margin: 58px auto;
@@ -170,10 +170,10 @@ header {
   font-weight: bold;
   /* font-size: 22px; */
   font-size: 1.3rem;
-  color: #FFFFFF;
+  color: black;
   width: 85px;
   height: 33px;
-  background-color: #FA382F;
+  background-color: green
   padding: 3px 10px;
   line-height: 27px;
   margin: 58px auto;
@@ -195,10 +195,10 @@ header {
   font-weight: bold;
   /* font-size: 22px; */
   font-size: 1.3rem;
-  color: #FFFFFF;
+  color: black;
   width: 300px;
   height: 33px;
-  background-color: #FA382F;
+  background-color: green ;
   padding: 3px 10px;
   line-height: 27px;
   letter-spacing: 0;
@@ -268,10 +268,10 @@ header {
   font-weight: bold;
   /* font-size: 22px; */
   font-size: 1.3rem;
-  color: #FFFFFF;
+  color: black;
   width: 200px;
   height: 33px;
-  background-color: #FA382F;
+  background-color: green;
   padding: 3px 10px;
   line-height: 27px;
   letter-spacing: 0;
@@ -302,10 +302,10 @@ header {
   font-weight: bold;
   /* font-size: 22px; */
   font-size: 1.3rem;
-  color: #FFFFFF;
+  color: black;
   width: 200px;
   height: 33px;
-  background-color: #FA382F;
+  background-color: green;
   padding: 3px 10px;
   line-height: 27px;
   letter-spacing: 0;
