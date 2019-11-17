@@ -1,5 +1,4 @@
 # Portfolio-NinaM
-# Portfolio-NinaM
 
 ## Link to site
 https://ninamansster-portfolio.netlify.com/
