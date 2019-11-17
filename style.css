@@ -82,8 +82,8 @@ header {
 .name {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
-  /* font-size: 13px; */
-  font-size: 0.76rem;
+  font-size: 13px;
+  /* font-size: 0.76rem; */
   color:#FFFFFF;
   top: 176px;
   left: 41px;
@@ -95,8 +95,8 @@ header {
 .fullname {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  /* font-size: 13px; */
-  font-size: 0.76rem;
+  font-size: 13px;
+  /* font-size: 0.76rem; */
   color:#FFFFFF;
   top: 176px;
   left: 140px;
@@ -106,8 +106,8 @@ header {
 }
 .title h1 {
   font-weight: bold;
-  /* font-size: 40px; */
-  font-size: 2.35rem;
+  font-size: 40px;
+  /* font-size: 2.35rem; */
   color: #FFFFFF;
   top: 196px;
   left: 41px;
@@ -211,7 +211,11 @@ header {
   height: 179px;
   background: #000000 0% 0% no-repeat padding-box;
   /* opacity: 0.38; */
-  margin: 0px 36px;
+  margin: 0px 36px 42px;
+}
+
+.myproject {
+  margin: 43px 0px;
 }
 
 .description-header h5 {
@@ -241,13 +245,14 @@ header {
 }
 
 .tags h6 {
-  font-family:'Roboto, sans-serif';
+  font-family:'Roboto';
   width: fit-content;
   height: 1rem;
   background: #FDDFE7 0% 0% no-repeat padding-box;
   opacity: 1;
   font-weight: normal;
-  font-size: 9px;
+  /* font-size: 9px; */
+  font-size: 0.5rem;
   color: #2B2E34;
   text-align: center;
   padding: 2px;
@@ -255,7 +260,7 @@ header {
 }
 
 /* THOUGHTS*/
-.content-container:nth-child(4) {
+.content-container-thinking {
   padding: 58px 0;
 }
 .header-box-thoughts h2 {
@@ -275,7 +280,7 @@ header {
 }
 
 .date {
-  font-family: 'Roboto, sans-serif';
+  font-family: 'Roboto';
   font-weight: normal;
   font-size: 1rem;
   color:#FA382F;
@@ -286,7 +291,7 @@ header {
 
 /* SKILLS*/
 
-.content-container:nth-child(5) {
+.content-container-skills {
   background-color: #F4F4F4;
   padding: 58px 0;
   display: block;
@@ -342,7 +347,7 @@ ul {
 
 
 /* MORE*/
-.content-container:nth-child(6) {
+.content-container-more {
   padding: 58px 0;
   display: block;
   text-align:center;
@@ -386,7 +391,7 @@ a:focus {
 }
 
 /* FOOTER */
-.content-container:first-child {
+.content-container-footer {
   display: flex;
   align-items: center;
 }
@@ -395,7 +400,7 @@ a:focus {
 /* FOOTER */
 
 footer {
-  background-color: #072BCE;
+  background-color: green ;
   height: 300px;
   margin: 58px 0px;
   display: flex;
@@ -427,35 +432,13 @@ footer {
   margin: 3px 0px;
 }
 
-.h2monserrat {
-  font-family:'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 39px;
-  color: #FFFFFF;
-}
-
-.h3monserrat {
-  font-family:'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 37px;
-  color: #FFFFFF;
-}
-.h7monserrat {
-  font-family:'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  color: #FDDFE7;
-}
-
-.h6roboto {
-  font-family: 'Roboto, sans-serif';
-  font-weight: bold;
-  font-size: 21px;
-  columns: #000000;
-}
 
 /* MEDIAQUERIES */
 @media (min-width: 650px) {
+
+.html {
+  font-size: 18px;
+}
 
 .skillset-container {
   display: inline-grid;
@@ -480,6 +463,24 @@ footer {
 
 @media (min-width: 1024px) {
 
+  .html {
+    font-size: 20px;
+  }
+
+  .content-container-projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .thinking {
+    width: 350px;
+  }
+
+  .content-container-thinking {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .skillset-container {
     
     display: inline-grid;
@@ -491,14 +492,71 @@ footer {
      
   }
 
+  header {
+    height: 655px;
+  }
+
   #portfolio-image {
     width: 333px;
     height: 333px;
     border-radius: 50%;
     border: 3px solid #FFFFFF;
     position: absolute;
-    top: 210px;
-    right: 10%; 
+    top: 370px;
+    right: 5%; 
+  }
+
+  .name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 28px;
+    /* font-size: 0.76rem; */
+    color:#FFFFFF;
+    top: 239px;
+    left: 41px;
+    position: absolute;
+    display: block;
+    background-color: green;
+  }
+  
+  .fullname {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 28px;
+    /* font-size: 0.76rem; */
+    color:#FFFFFF;
+    top: 239px;
+    left: 240px;
+    position: absolute;
+    display: block;
+    background-color: green;
+  }
+  .title h1 {
+    font-weight: bold;
+    font-size: 82px;
+    /* font-size: 2.35rem; */
+    color: #FFFFFF;
+    top: 279px;
+    left: 41px;
+    position: absolute;
+    text-align: left;
+    display: block;
+    background-color:green;
+  }
+
+  .subtitle h1 {
+    /* font:'Montserrat', sans-serif; */
+    font-weight: bold;
+    font-size: 50px;
+    /* font-size: 1.4rem; */
+    color: #FFFFFF;
+    top: 490px;
+    left: 41px;
+    background-color:green;
+    position: absolute;
+    text-align: left;
+    display: block;
+    
   }
   
   }
