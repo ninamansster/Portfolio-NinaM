@@ -173,7 +173,7 @@ header {
   color: black;
   width: 85px;
   height: 33px;
-  background-color: green;
+  background-color: seagreen;
   padding: 3px 10px;
   line-height: 27px;
   margin: 58px auto;
@@ -198,7 +198,7 @@ header {
   color: black;
   width: 300px;
   height: 33px;
-  background-color: green ;
+  background-color: seagreen ;
   padding: 3px 10px;
   line-height: 27px;
   letter-spacing: 0;
@@ -271,7 +271,7 @@ header {
   color: black;
   width: 200px;
   height: 33px;
-  background-color: green;
+  background-color: seagreen;
   padding: 3px 10px;
   line-height: 27px;
   letter-spacing: 0;
@@ -305,7 +305,7 @@ header {
   color: black;
   width: 200px;
   height: 33px;
-  background-color: green;
+  background-color: seagreen;
   padding: 3px 10px;
   line-height: 27px;
   letter-spacing: 0;
@@ -400,7 +400,7 @@ a:focus {
 /* FOOTER */
 
 footer {
-  background-color: green ;
+  background-color: seagreen ;
   height: 300px;
   margin: 58px 0px;
   display: flex;

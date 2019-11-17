@@ -1,19 +1,20 @@
 # Portfolio-NinaM
 # Portfolio-NinaM
-##Link to site
+
+## Link to site
 https://ninamansster-portfolio.netlify.com/
 
-##Testing
-*Cross-Browser-Testing*
-***Chrome OK - tabbing works - looks OK
-***Firefox OK - tabbing works - looks OK
-***SAfari OK - tabbing works - looks OK
-***Edge OK - tabbing works - looks OK
+## Testing
+* Cross-Browser-Testing
+*** Chrome OK - tabbing works - looks OK
+*** Firefox OK - tabbing works - looks OK
+*** SAfari OK - tabbing works - looks OK
+*** Edge OK - tabbing works - looks OK
 
-*Accessability*
+## Accessability
 Webaim
 http://wave.webaim.org/report#/https://ninamansster-portfolio.netlify.com/
-Cantrast issue with the red text and especially the white on red text, so I changed that to black and green.
+Contrast issue with the red text and especially the white on red text, so I changed that to black and green.
 
 
 Aria
@@ -27,7 +28,7 @@ LightHouse
 95% accessablilty
 93% best practices
 
-*HTML-Validation*
+## HTML-Validation*
 w3 validator
 Lots duplicate errors, an unclosed div and some errors I dont understand.
 
