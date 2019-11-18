@@ -335,9 +335,9 @@ header {
   font-weight: bold;
 }
 
-.skillset ul {
+ul {
   list-style-type: none;
-  padding-right: 8vw;
+  padding-inline-start: 0px
  }
 
 .skillset li {
