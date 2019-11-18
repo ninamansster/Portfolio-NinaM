@@ -171,7 +171,7 @@ header {
   /* font-size: 22px; */
   font-size: 1.3rem;
   color: black;
-  width: 85px;
+  width: fit-content;
   height: 33px;
   background-color: seagreen;
   padding: 3px 10px;
@@ -196,7 +196,7 @@ header {
   /* font-size: 22px; */
   font-size: 1.3rem;
   color: black;
-  width: 300px;
+  width: fit-content;
   height: 33px;
   background-color: seagreen ;
   padding: 3px 10px;
@@ -269,7 +269,7 @@ header {
   /* font-size: 22px; */
   font-size: 1.3rem;
   color: black;
-  width: 200px;
+  width: fit-content;
   height: 33px;
   background-color: seagreen;
   padding: 3px 10px;
@@ -303,7 +303,7 @@ header {
   /* font-size: 22px; */
   font-size: 1.3rem;
   color: black;
-  width: 200px;
+  width: fit-content;
   height: 33px;
   background-color: seagreen;
   padding: 3px 10px;
@@ -509,8 +509,8 @@ html {
   .name {
     font-family: 'Roboto', sans-serif;
     font-weight: normal;
-    font-size: 28px;
-    /* font-size: 0.76rem; */
+    /* font-size: 28px; */
+    font-size: 1rem;
     color:#FFFFFF;
     top: 239px;
     left: 41px;
@@ -522,33 +522,35 @@ html {
   .fullname {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 28px;
-    /* font-size: 0.76rem; */
+    /* font-size: 28px; */
+    font-size: 1rem;
     color:#FFFFFF;
     top: 239px;
-    left: 240px;
+    left: 203px;
     position: absolute;
     display: block;
     background-color: green;
+    width: fit-content;
   }
   .title h1 {
     font-weight: bold;
-    font-size: 82px;
-    /* font-size: 2.35rem; */
+    /* font-size: 82px; */
+    font-size: 3rem;
     color: #FFFFFF;
-    top: 279px;
+    top: 310px;
     left: 41px;
     position: absolute;
     text-align: left;
     display: block;
     background-color:green;
+    width: fit-content;
   }
 
   .subtitle h1 {
     /* font:'Montserrat', sans-serif; */
     font-weight: bold;
-    font-size: 50px;
-    /* font-size: 1.4rem; */
+    /* font-size: 50px; */
+    font-size: 2.0rem;
     color: #FFFFFF;
     top: 490px;
     left: 41px;
@@ -556,7 +558,7 @@ html {
     position: absolute;
     text-align: left;
     display: block;
-    
+    width: fit-content;
   }
   
   }
