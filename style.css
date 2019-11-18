@@ -335,7 +335,7 @@ header {
   font-weight: bold;
 }
 
-ul {
+.skillset ul {
   list-style-type: none;
   padding-right: 8vw;
  }
@@ -436,7 +436,7 @@ footer {
 /* MEDIAQUERIES */
 @media (min-width: 650px) {
 
-.html {
+html {
   font-size: 18px;
 }
 
@@ -463,7 +463,7 @@ footer {
 
 @media (min-width: 1024px) {
 
-  .html {
+  html {
     font-size: 20px;
   }
 

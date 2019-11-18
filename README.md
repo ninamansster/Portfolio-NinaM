@@ -1,5 +1,4 @@
 # Portfolio-NinaM
-# Portfolio-NinaM
 
 ## Link to site
 https://ninamansster-portfolio.netlify.com/
@@ -14,7 +13,7 @@ https://ninamansster-portfolio.netlify.com/
 ## Accessability
 Webaim
 http://wave.webaim.org/report#/https://ninamansster-portfolio.netlify.com/
-Contrast issue with the red text and especially the white on red text, so I changed that to black and green.
+Contrast issue with the red text and especially the white on red text, so I changed that to black and green. I will need to work more on my color schema to get it nice looking.
 
 
 Aria
@@ -28,7 +27,7 @@ LightHouse
 95% accessablilty
 93% best practices
 
-## HTML-Validation*
+## HTML-Validation
 w3 validator
 Lots duplicate errors, an unclosed div and some errors I dont understand.
 
