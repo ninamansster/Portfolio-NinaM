@@ -228,17 +228,31 @@ header {
   text-align:center;
 }
 
-.project-image{
-  width: 303px;
-  height: 179px;
-  background: #000000 0% 0% no-repeat padding-box;
-  /* opacity: 0.38; */
-  margin: 0px 36px 42px;
+.content-container-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .myproject {
-  margin: 43px 0px;
+  background: rgb(235, 233, 233);
+  width: 600px;
+  margin: 43px 10px;
+  padding: 43px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+.project-image{
+  width: 520px;
+  height: 310px;
+  margin: 0px 36px 42px;
+  object-fit: cover;
+  object-position: top;
+}
+
 
 .description-header h5 {
   font-family: 'Roboto', sans-serif;
@@ -254,7 +268,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 1rem;
-  color: #000000;
+  color: black;
   margin: 0px 37px;
   text-align: left;
   line-height: 25px;
