@@ -287,7 +287,6 @@ header {
 }
 
 .otherproject {
-  background: #F4F4F4;
   width: 350px;
   margin: 43px 5px 0px 5px;
 }
@@ -337,7 +336,6 @@ header {
 .content-container-thinking {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -561,31 +559,6 @@ html {
     font-size: 20px;
   }
 
-  .content-container-projects {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .thinking {
-    width: 350px;
-  }
-
-  .content-container-thinking {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .skillset-container {
-    
-    display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 5px;
-    grid-row-gap: 5px;
-    margin: 0 auto;
-    text-align: center;
-     
-  }
-
   header {
     height: 655px;
   }
@@ -606,8 +579,8 @@ html {
     /* font-size: 28px; */
     font-size: 1rem;
     color:#FFFFFF;
-    top: 150px;
-    left: 41px;
+    top: 15%;
+    left: 15%;
     position: absolute;
     display: block;
     /* background-color: green; */
@@ -619,8 +592,8 @@ html {
     /* font-size: 28px; */
     font-size: 1rem;
     color:#FFFFFF;
-    top: 150px;
-    left: 203px;
+    top: 15%;
+    left: 25%;
     position: absolute;
     display: block;
     /* background-color: green; */
@@ -631,8 +604,8 @@ html {
     /* font-size: 82px; */
     font-size: 3rem;
     color: #FFFFFF;
-    top: 200px;
-    left: 41px;
+    top: 30%;
+    left: 15%;
     position: absolute;
     text-align: left;
     display: block;
@@ -646,8 +619,8 @@ html {
     /* font-size: 50px; */
     font-size: 1.5rem;
     color: #FFFFFF;
-    top: 350px;
-    left: 41px;
+    top: 55%;
+    left: 15%;
     /* background-color:green; */
     position: absolute;
     text-align: left;
@@ -692,6 +665,47 @@ html {
     text-align: left;
     line-height: 25px;
   }
+
+  .content-container-projects {
+    display: flex;
+    flex-wrap: row;
+  }
+
+  .content-container-other-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .otherproject {
+    width: 600px;
+    margin: 43px 5px 0px 5px;
+  }
+
+  .content-container-thinking {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    /* align-content: flex-end; */
+  }
+
+  .thinking{
+    width: 600px;
+    margin: 43px 5px 0px 5px;
+  }
+
+  .skillset-container {
+    
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    margin: 0 auto;
+    text-align: center;
+     
+  }
+
+  
   
   }
 
