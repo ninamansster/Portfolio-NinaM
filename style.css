@@ -7,6 +7,8 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
 ul[class],
 ol[class],
@@ -120,7 +122,7 @@ header {
 
 .subtitle h1 {
   /* font:'Montserrat', sans-serif; */
-  font-weight: bold;
+  font-weight: 550;
   /* font-size: 24px; */
   font-size: 1.4rem;
   color:  #FFFFFF;;
@@ -132,11 +134,74 @@ header {
   /* background-color:#170303; */
 }
 
+/* MAIN */
+
+main {
+  display:flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+h2 {
+  /* font:'Montserrat', sans-serif; */
+  font-weight: bold;
+  /* font-size: 22px; */
+  font-size: 1.3rem;
+  color: black;
+  width: fit-content;
+  height: 33px;
+  background-color: #FA382F;
+  padding: 3px 10px;
+  line-height: 27px;
+  margin: 50px auto 30px auto;
+  text-align:center;
+  
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: black;
+  line-height: 25px;
+  letter-spacing: 0;
+  margin: 50px auto 20px auto;
+  text-align:center;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color:#FA382F;
+  text-align: left;
+  line-height: 25px;
+  padding: 15px 0px 5px;
+}
+
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tags h6 {
+  font-family:'Roboto';
+  width: fit-content;
+  background: #FDDFE7 0% 0% no-repeat padding-box;
+  opacity: 1;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: #2B2E34;
+  text-align: center;
+  padding: 5px;
+  margin-right: 10px;
+}
+
 /* PITCH*/
 .mypitch-background {
   background-color: #F4F4F4;
-  /* height: 342px; */
-  margin: 5px 0px;
+  margin: auto;
   z-index: -1;
   padding: 58px 37px;
 }
@@ -148,6 +213,7 @@ header {
   text-align: start;
   line-height: 29px;
   text-indent: 50px;
+  max-width: 700px;
   
 }
 
@@ -173,95 +239,46 @@ header {
   background: #FA382F;
 }
 
-/*SECOND HEADER*/
 
-.header-other h3 {
-  /* font:'Montserrat', sans-serif; */
-  font-weight: bold;
-  /* font-size: 21px; */
-  font-size: 1.2rem;
-  color: black;
-  line-height: 25px;
-  letter-spacing: 0;
-  margin: auto;
-  text-align:center;
-}
+
 
 /* TECH */
-.header-box-tech h2 {
-  /* font:'Montserrat', sans-serif; */
-  font-weight: bold;
-  /* font-size: 22px; */
-  font-size: 1.3rem;
-  color: black;
-  width: fit-content;
-  height: 33px;
-  background-color: #FA382F;
-  padding: 3px 10px;
-  line-height: 27px;
-  margin: auto;
-  text-align:center;
-  
+
+.content-container-programmingskills{
+  max-width: 700px;
 }
 .programmingskills p {
-  /* font:'Montserrat', sans-serif; */
   font-weight: normal;
   font-size: 1rem;
   color: #000000;
-  margin: 58px 37px;
   text-align: center;
   line-height: 29px;
 }
+
 /* FEATURED*/
-.header-box-featured h2{
-  /* font:'Montserrat', sans-serif; */
-  font-weight: bold;
-  /* font-size: 22px; */
-  font-size: 1.3rem;
-  color: black;
-  width: fit-content;
-  height: 33px;
-  background-color: #FA382F ;
-  padding: 3px 10px;
-  line-height: 27px;
-  letter-spacing: 0;
-  margin: auto ;
-  text-align:center;
-}
-
 .content-container-projects {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.myproject {
   background: #F4F4F4;
-  width: 350px;
-  margin: 43px 5px 0px 5px;
-  /* padding: 43px 0px; */
+  margin-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+}
+
+.myproject {
+  
+  width: 350px;
+  margin: 50px 5px;
+  display: flex;
+  flex-direction: column;
 }
 
 .project-image{
-  width: 303px;
+  width: 350px;
   height: 179px;
-  margin: 0px 36px 42px;
+  margin: auto;
   object-fit: cover;
   object-position: top;
-}
-
-.content-container-projects h5 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  color:#FA382F;
-  margin: 10px 37px;
-  text-align: left;
-  line-height: 25px;
 }
 
 .content-container-projects p {
@@ -269,7 +286,7 @@ header {
   font-weight: normal;
   font-size: 1rem;
   color: black;
-  margin: 5px 37px;
+  /* margin: 5px 37px; */
   text-align: left;
   line-height: 25px;
 }
@@ -283,53 +300,23 @@ header {
   /* justify-content: center; */
   align-items: center;
   
-  
 }
 
 .otherproject {
   width: 350px;
-  margin: 43px 5px 0px 5px;
+  margin: 20px 5px 0px 5px;
+
 }
-
-
-.description-header h5 {
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  color:#FA382F;
-  margin: 5px 37px; 
-  text-align: left;
-  line-height: 25px;
-}
-
 
 .description p {
   font-family: 'Roboto', sans-serif;
   font-weight: normal;
   font-size: 1rem;
   color: black;
-  margin: 5px 37px; 
+  /* margin: 5px 37px;  */
   text-align: start;
   line-height: 25px;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 5px 37px; 
-}
-
-.tags h6 {
-  font-family:'Roboto';
-  width: fit-content;
-  background: #FDDFE7 0% 0% no-repeat padding-box;
-  opacity: 1;
-  font-weight: bold;
-  font-size: 0.8rem;
-  color: #2B2E34;
-  text-align: center;
-  padding: 5px;
-  margin-right: 10px;
+  padding: 5px 0px;
 }
 
 /* THOUGHTS*/
@@ -341,23 +328,7 @@ header {
 
 .thinking{
   width: 350px;
-  margin: 43px 5px 0px 5px;
-}
-
-.header-box-thoughts h2 {
-  /* font:'Montserrat', sans-serif; */
-  font-weight: bold;
-  /* font-size: 22px; */
-  font-size: 1.3rem;
-  color: black;
-  width: fit-content;
-  height: 33px;
-  background-color: #FA382F;
-  padding: 3px 10px;
-  line-height: 27px;
-  letter-spacing: 0;
-  margin: auto;
-  text-align:center;
+  margin: 20px 5px 0px 5px;
 }
 
 .date {
@@ -367,30 +338,18 @@ header {
   color:#FA382F;
   text-align: left;
   line-height: 32px;
-  margin: 0px 37px;
+  /* margin: 0px 37px; */
 }
 
 /* SKILLS*/
 
 .content-container-skills {
   background-color: #F4F4F4;
-  padding: 58px 0;
+  padding: 50px 0;
   display: block;
   text-align:center;
-}
-
-.header-box-skills h2 {
-  font-weight: bold;
-  /* font-size: 22px; */
-  font-size: 1.3rem;
-  color: black;
-  width: fit-content;
-  height: 33px;
-  background-color: #FA382F;
-  padding: 3px 10px;
-  line-height: 27px;
-  letter-spacing: 0;
-  margin: 58px auto;
+  margin-top: 50px;
+  min-width: 350px;
 }
 
 .skillset-container{
@@ -425,7 +384,6 @@ ul {
   font-weight: normal;
   color: #000000;
 }
-
 
 /* MORE*/
 .content-container-more {
@@ -524,193 +482,180 @@ footer {
   margin: 3px 0px;
 }
 
-
 /* MEDIAQUERIES */
 @media (min-width: 650px) {
 
-html {
-  font-size: 18px;
-}
-
-.skillset-container {
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  margin: 0 auto;
-  text-align: center; 
-}
-
-#portfolio-image {
-  width: 262px;
-  height: 262px;
-  border-radius: 50%;
-  border: 3px solid #FFFFFF;
-  position: absolute;
-  top: 275px;
-  right: 10%; 
-}
-
-}
-
-@media (min-width: 1024px) {
-
   html {
-    font-size: 20px;
-  }
-
-  header {
-    height: 655px;
+    font-size: 18px;
   }
 
   #portfolio-image {
-    width: 333px;
-    height: 333px;
+    width: 262px;
+    height: 262px;
     border-radius: 50%;
     border: 3px solid #FFFFFF;
     position: absolute;
-    top: 350px;
-    right: 5%; 
+    top: 275px;
+    right: 10%; 
   }
 
-  .name {
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    /* font-size: 28px; */
-    font-size: 1rem;
-    color:#FFFFFF;
-    top: 15%;
-    left: 15%;
-    position: absolute;
-    display: block;
-    /* background-color: green; */
+  .content-container-skills {
+    max-width: 1500px;
+
   }
   
-  .fullname {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    /* font-size: 28px; */
-    font-size: 1rem;
-    color:#FFFFFF;
-    top: 15%;
-    left: 25%;
-    position: absolute;
-    display: block;
-    /* background-color: green; */
-    width: fit-content;
-  }
-  .title h1 {
-    font-weight: bold;
-    /* font-size: 82px; */
-    font-size: 3rem;
-    color: #FFFFFF;
-    top: 30%;
-    left: 15%;
-    position: absolute;
-    text-align: left;
-    display: block;
-    /* background-color:green; */
-    width: fit-content;
-  }
-
-  .subtitle h1 {
-    /* font:'Montserrat', sans-serif; */
-    font-weight: bold;
-    /* font-size: 50px; */
-    font-size: 1.5rem;
-    color: #FFFFFF;
-    top: 55%;
-    left: 15%;
-    /* background-color:green; */
-    position: absolute;
-    text-align: left;
-    display: block;
-    width: fit-content;
-  }
-
-  .myproject {
-    background: #F4F4F4;
-    width: 600px;
-    margin: 43px 5px;
-    padding: 43px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .project-image{
-    width: 520px;
-    height: 310px;
-    margin: 0px 36px 42px;
-    object-fit: cover;
-    object-position: top;
-  }
-  
-  .content-container-projects h5 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    color:#FA382F;
-    margin: 10px 37px;
-    text-align: left;
-    line-height: 25px;
-  }
-  
-  .content-container-projects p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 1rem;
-    color: black;
-    margin: 5px 37px;
-    text-align: left;
-    line-height: 25px;
-  }
-
-  .content-container-projects {
-    display: flex;
-    flex-wrap: row;
-  }
-
-  .content-container-other-projects{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
-  
-  .otherproject {
-    width: 600px;
-    margin: 43px 5px 0px 5px;
-  }
-
-  .content-container-thinking {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    /* align-content: flex-end; */
-  }
-
-  .thinking{
-    width: 600px;
-    margin: 43px 5px 0px 5px;
-  }
-
   .skillset-container {
-    
     display: inline-grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
     margin: 0 auto;
-    text-align: center;
-     
+    text-align: center; 
   }
-
   
+  .content-container-projects {
+    max-width: 1500px;
+  }
+ 
   
   }
-
-
-
-
-
-
+  
+  @media (min-width: 1024px) {
+  
+    html {
+      font-size: 20px;
+    }
+  
+    header {
+      height: 655px;
+    }
+  
+    #portfolio-image {
+      width: 333px;
+      height: 333px;
+      border-radius: 50%;
+      border: 3px solid #FFFFFF;
+      position: absolute;
+      top: 350px;
+      right: 5%; 
+    }
+  
+    .name {
+      font-family: 'Roboto', sans-serif;
+      font-weight: normal;
+      /* font-size: 28px; */
+      font-size: 1rem;
+      color:#FFFFFF;
+      top: 15%;
+      left: 15%;
+      position: absolute;
+      display: block;
+      /* background-color: green; */
+    }
+    
+    .fullname {
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      /* font-size: 28px; */
+      font-size: 1rem;
+      color:#FFFFFF;
+      top: 15%;
+      left: 35%;
+      position: absolute;
+      display: block;
+      /* background-color: green; */
+      width: fit-content;
+    }
+    .title h1 {
+      font-weight: bold;
+      /* font-size: 82px; */
+      font-size: 3rem;
+      color: #FFFFFF;
+      top: 25%;
+      left: 15%;
+      position: absolute;
+      text-align: left;
+      display: block;
+      /* background-color:green; */
+      width: fit-content;
+    }
+  
+    .subtitle h1 {
+      /* font:'Montserrat', sans-serif; */
+      font-weight: bold;
+      /* font-size: 50px; */
+      font-size: 1.5rem;
+      color: #FFFFFF;
+      top: 50%;
+      left: 15%;
+      /* background-color:green; */
+      position: absolute;
+      text-align: left;
+      display: block;
+      width: fit-content;
+    }
+  
+    .myproject {
+      background: #F4F4F4;
+      width: 500px;
+      margin: 50px 10px;
+      padding: 50px 10px; 
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .project-image{
+      width: 500px;
+      height: 310px;
+      margin: auto;
+      object-fit: cover;
+      object-position: top;
+    }
+    
+    .content-container-projects {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  
+    .content-container-other-projects{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .otherproject {
+      width: 500px;
+      margin: 20px 5px 0px 5px;
+    }
+  
+    .content-container-thinking {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .thinking{
+      width: 500px;
+      margin: 43px 15px 0px 5px;
+    }
+  
+    .skillset-container {
+      
+      display: inline-grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-column-gap: 5px;
+      grid-row-gap: 5px;
+      margin: 0 auto;
+      text-align: center;
+       
+    }
+  
+    
+    
+    }
+  
