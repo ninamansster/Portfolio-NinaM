@@ -201,9 +201,11 @@ h5 {
 /* PITCH*/
 .mypitch-background {
   background-color: #F4F4F4;
-  margin: auto;
+  /* margin: auto; */
   z-index: -1;
   padding: 58px 37px;
+  width: 100%;
+  display: block;
 }
 
 .mypitch p{
@@ -245,7 +247,7 @@ h5 {
 /* TECH */
 
 .content-container-programmingskills{
-  max-width: 700px;
+  width: 100%;
 }
 .programmingskills p {
   font-weight: normal;
@@ -256,9 +258,17 @@ h5 {
 }
 
 /* FEATURED*/
+.featured-background {
+  margin-top: 50px;
+  background-color: #F4F4F4;
+  height: 100px;
+  width:100%;
+  display: block;
+}
+
 .content-container-projects {
   background: #F4F4F4;
-  margin-top: 50px;
+  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -266,7 +276,6 @@ h5 {
 }
 
 .myproject {
-  
   width: 350px;
   margin: 50px 5px;
   display: flex;
@@ -349,7 +358,7 @@ h5 {
   display: block;
   text-align:center;
   margin-top: 50px;
-  min-width: 350px;
+  width: 100%;
 }
 
 .skillset-container{
@@ -500,7 +509,7 @@ footer {
   }
 
   .content-container-skills {
-    max-width: 1500px;
+    width: 100%;
 
   }
   
@@ -514,7 +523,7 @@ footer {
   }
   
   .content-container-projects {
-    max-width: 1500px;
+    width: 100%;
   }
  
   
@@ -543,32 +552,27 @@ footer {
     .name {
       font-family: 'Roboto', sans-serif;
       font-weight: normal;
-      /* font-size: 28px; */
       font-size: 1rem;
       color:#FFFFFF;
       top: 15%;
       left: 15%;
       position: absolute;
       display: block;
-      /* background-color: green; */
     }
     
     .fullname {
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
-      /* font-size: 28px; */
       font-size: 1rem;
       color:#FFFFFF;
       top: 15%;
       left: 35%;
       position: absolute;
       display: block;
-      /* background-color: green; */
       width: fit-content;
     }
     .title h1 {
       font-weight: bold;
-      /* font-size: 82px; */
       font-size: 3rem;
       color: #FFFFFF;
       top: 25%;
@@ -576,19 +580,15 @@ footer {
       position: absolute;
       text-align: left;
       display: block;
-      /* background-color:green; */
       width: fit-content;
     }
   
     .subtitle h1 {
-      /* font:'Montserrat', sans-serif; */
       font-weight: bold;
-      /* font-size: 50px; */
       font-size: 1.5rem;
       color: #FFFFFF;
       top: 50%;
       left: 15%;
-      /* background-color:green; */
       position: absolute;
       text-align: left;
       display: block;
@@ -655,7 +655,5 @@ footer {
        
     }
   
-    
-    
     }
   
