@@ -139,8 +139,8 @@ header {
 main {
   display:flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
 }
 
 h2 {
@@ -154,7 +154,7 @@ h2 {
   background-color: #FA382F;
   padding: 3px 10px;
   line-height: 27px;
-  margin: 50px auto 30px auto;
+  margin: 70px auto 40px auto;
   text-align:center;
   
 }
@@ -165,7 +165,7 @@ h3 {
   color: black;
   line-height: 25px;
   letter-spacing: 0;
-  margin: 50px auto 20px auto;
+  margin: 50px auto 0px auto;
   text-align:center;
 }
 
@@ -195,17 +195,13 @@ h5 {
   color: #2B2E34;
   text-align: center;
   padding: 5px;
-  margin-right: 10px;
+  margin: 0px 5px 5px 0px;
 }
 
 /* PITCH*/
-.mypitch-background {
+.content-container-mypitch {
   background-color: #F4F4F4;
-  /* margin: auto; */
-  z-index: -1;
-  padding: 58px 37px;
-  width: 100%;
-  display: block;
+  padding: 50px;
 }
 
 .mypitch p{
@@ -231,7 +227,6 @@ h5 {
   height: 3px;
   background: #FA382F;
   border-radius: 5px;
-
 }
 
 .circles {
@@ -255,6 +250,7 @@ h5 {
   color: #000000;
   text-align: center;
   line-height: 29px;
+  padding: 0px 50px;
 }
 
 /* FEATURED*/
@@ -268,7 +264,6 @@ h5 {
 
 .content-container-projects {
   background: #F4F4F4;
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -277,7 +272,14 @@ h5 {
 
 .myproject {
   width: 300px;
-  margin: 50px 10px;
+  margin: 40px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.myproject:last-child {
+  width: 300px;
+  margin: 40px 0px 30px;
   display: flex;
   flex-direction: column;
 }
@@ -308,13 +310,19 @@ h5 {
   justify-content: space-between;
   /* justify-content: center; */
   align-items: center;
+  background: #F4F4F4;
+
   
 }
 
 .otherproject {
   width: 300px;
-  margin: 20px 10px 0px 10px;
+  margin: 40px 0px 0px 0px;
+}
 
+.otherproject:last-child {
+  width: 300px;
+  margin: 40px 0px;
 }
 
 .description p {
@@ -337,7 +345,7 @@ h5 {
 
 .thinking{
   width: 300px;
-  margin: 20px 10px 0px 10px;
+  margin: 40px 0px 0px;
 }
 
 .date {
@@ -354,7 +362,7 @@ h5 {
 
 .content-container-skills {
   background-color: #F4F4F4;
-  padding: 50px 0;
+  /* padding: 50px 0; */
   display: block;
   text-align:center;
   margin-top: 50px;
@@ -406,7 +414,7 @@ ul {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 10px;
+  margin: 40px;
 }
 .iconsborder-more {
   padding: 5px 5px 5px 6px;
@@ -476,7 +484,7 @@ footer {
   padding: 3px 10px;
   line-height: 27px;
   letter-spacing: 0;
-  margin: 58px 0px;
+  margin: 70px 0px 40px;
 }
 
 .footer-name, .contact, footer a {
@@ -508,8 +516,14 @@ footer {
     right: 10%; 
   }
 
+  .content-container-mypitch {
+    background-color: #F4F4F4;
+    padding: 50px 120px;
+  }
+
   .content-container-skills {
     width: 100%;
+    padding: 50px 120px;
 
   }
   
@@ -610,6 +624,16 @@ footer {
       margin: auto;
       object-fit: cover;
       object-position: top;
+    }
+
+    .content-container-mypitch {
+      background-color: #F4F4F4;
+      padding: 50px 300px;
+    }
+
+    .programmingskills{
+      width: 100%;
+      padding: 50px 300px;
     }
     
     .content-container-projects {
