@@ -446,9 +446,9 @@ a:focus {
 /* FOOTER */
 
 footer {
-  background-color: #000000 ;
+  background-color:#2B2E34 ;
   height: 300px;
-  margin: 58px 0px;
+  margin: 58px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -494,14 +494,12 @@ footer {
   }
 
   .content-container-mypitch {
-    background-color: #F4F4F4;
     padding: 50px 120px;
   }
 
   .content-container-skills {
     width: 100%;
     padding: 50px 120px;
-
   }
 
   .myproject {
@@ -510,6 +508,7 @@ footer {
   
   .myproject:last-child {
     width: 400px;
+    margin: 40px 0px 0px;
   }
   
   .project-image{
@@ -563,6 +562,18 @@ footer {
     header {
       height: 655px;
     }
+
+    .headericons-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin: 10px;
+      position: absolute;
+      top: 15%;
+      right: 10%;
+      
+    }
   
     #portfolio-image {
       width: 333px;
@@ -571,7 +582,7 @@ footer {
       border: 3px solid #FFFFFF;
       position: absolute;
       top: 350px;
-      right: 5%; 
+      right: 10%; 
     }
   
     .name {
@@ -580,7 +591,7 @@ footer {
       font-size: 1rem;
       color:#FFFFFF;
       top: 15%;
-      left: 15%;
+      left: 300px;
       position: absolute;
       display: block;
     }
@@ -591,7 +602,7 @@ footer {
       font-size: 1rem;
       color:#FFFFFF;
       top: 15%;
-      left: 35%;
+      left: 450px;
       position: absolute;
       display: block;
       width: fit-content;
@@ -601,7 +612,7 @@ footer {
       font-size: 3rem;
       color: #FFFFFF;
       top: 25%;
-      left: 15%;
+      left: 300px;
       position: absolute;
       text-align: left;
       display: block;
@@ -613,38 +624,43 @@ footer {
       font-size: 1.5rem;
       color: #FFFFFF;
       top: 50%;
-      left: 15%;
+      left: 300px;
       position: absolute;
       text-align: left;
       display: block;
       width: fit-content;
     }
+
+    .content-container-mypitch {
+      padding: 70px 300px;
+    }
+
+    
+
+    /* .programmingskills p {
+      padding: 0px 300px;
+    } */
   
     .myproject {
       background: #F4F4F4;
-      width: 400px;
-      margin: 20px;
-      padding: 50px 10px; 
+      width: 500px;
+      margin: 50px 50px 0px;
+      /* padding: 50px 10px;  */
       display: flex;
       flex-direction: column;
     }
+
+    .myproject:last-child{
+      width: 500px;
+      margin: 50px 50px 0px;
+    }
     
     .project-image{
-      width: 400px;
+      width: 500px;
       height: 310px;
       margin: auto;
       object-fit: cover;
       object-position: top;
-    }
-
-    .content-container-mypitch {
-      background-color: #F4F4F4;
-      padding: 50px 300px;
-    }
-
-    .programmingskills{
-      width: 100%;
-      padding: 50px 300px;
     }
     
     .content-container-projects {
@@ -658,12 +674,18 @@ footer {
     .content-container-other-projects{
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
+      justify-content: center;
     }
     
     .otherproject {
-      width: 400px;
-      margin: 20px 5px 0px 5px;
+      width: 500px;
+      /* margin: 20px 5px 0px 5px; */
+      margin: 40px 0px 0px;
+    }
+
+    .otherproject:last-child {
+      width: 500px;
+      margin: 40px 0px;
     }
   
     .content-container-thinking {
@@ -674,9 +696,9 @@ footer {
       align-items: flex-start;
     }
   
-    .thinking{
-      width: 400px;
-      margin: 43px 20px 0px 5px;
+    .thinking {
+      width: 500px;
+      margin: 40px 40px 0px;
     }
   
     .skillset-container {
@@ -689,6 +711,32 @@ footer {
       text-align: center;
        
     }
+
+    .icons{
+      justify-content: center;
+    }
   
     }
   
+    @media (min-width: 1440px) {
+
+      .headericons-container {
+        top: 15%;
+        right: 10%;
+        
+      }
+
+      #portfolio-image {
+        top: 350px;
+        right: 10%; 
+      }
+
+      .content-container-programmingskills {
+      padding: 0px 300px;
+    }
+
+      .content-container-mypitch {
+        padding: 70px 400px;
+      }
+    }
+      
